@@ -1,0 +1,59 @@
+@mixin keyframes($animationName)
+    @keyframes #{$animationName}
+        @content;
+@function randomNum($min, $max)
+    $rand: random()
+    $randomNum: $min + floor($rand * (($max - $min) + 1))
+    @return $randomNum
+
+@include keyframes(square)
+    0%
+        transform: translateY(0) translateX(0)
+        background-color: rgba(255, 255, 255, .4)
+    25%
+        transform: translateY(150)
+    50%
+        transform: translateY(350)
+    75%
+        transform: translateY(650)
+    100%
+        transform: scale(2.5) translateY(-1000px)
+        background-color: rgba(255, 255, 255, 0)
+
+ul
+    list-style: none
+body
+	font-family: 'Noto Sans TC', 'sans-serif'
+	color: white
+	font-weight: 300
+#app
+    height: auto
+    width: 100%
+    .bg-bubbles
+        position: fixed
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        z-index: -1
+        filter: blur(3px)
+        background: radial-gradient(ellipse at bottom, #101010 0%, #001F4D 100%)
+        li
+            position: absolute
+            list-style: none
+            display: block
+            width: 40px
+            height: 40px
+            bottom: -160px
+            animation: square 17s infinite
+            transition-timing-function: linear
+            border-radius: 50%
+            box-shadow: 0px 3.5px 1px -2px #F7C047
+            @for $i from 1 through 20
+                $variable: randomNum(40,120)
+                &:nth-child(#{$i})
+                    left: $i*5#{%}
+                    animation-duration: randomNum(10,20)#{s}
+                    animation-delay: randomNum(-5,10)#{s}
+                    width: $variable#{px}
+                    height: $variable#{px}

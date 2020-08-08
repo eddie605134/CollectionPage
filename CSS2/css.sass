@@ -1,0 +1,56 @@
+@function randomNum($max, $min: 0, $u: 1)
+    @return ($min + random($max)) * $u
+
+
+@function randomConicGradient()
+    $n: 16 + random(16)
+    $list: ()
+    @for $i from 0 to $n
+        $list: $list, rgba(hsl(100, randomNum(250, 5, 10%), randomNum(1, 1, 1%)), randomNum(100, 0, .01))
+    @return conic-gradient($list, nth($list, 1))
+
+@keyframes rotate
+    to
+        transform: rotate(1turn)
+
+
+
+body
+    overflow: hidden
+    margin: 0
+
+
+div
+    width: 100px
+    height: 100px
+    margin: 0
+    background: radial-gradient(hsl(9, randomNum(100, 75, 1%), randomNum(100, 75%, 1%)), black)
+    position: relative
+    overflow: hidden
+    border-radius: 50%
+
+    &:before, &:after
+        content: ''
+        position: absolute
+        top: 0
+        left: 0
+        width: 100px
+        height: 100px
+        opacity: .5
+        mix-blend-mode: overlay
+        animation: rotate randomNum(100, 25, .1s) ease-in-out infinite
+
+
+
+
+    &:before
+        background: randomConicGradient()
+    &:after
+        background: randomConicGradient()
+        animation-duration: randomNum(100, 25, .1s)
+        animation-direction: reverse
+
+
+
+
+

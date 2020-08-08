@@ -1,0 +1,53 @@
+@-webkit-keyframes rotate {
+  to {
+    -webkit-transform: rotate(1turn);
+            transform: rotate(1turn);
+  }
+}
+
+@keyframes rotate {
+  to {
+    -webkit-transform: rotate(1turn);
+            transform: rotate(1turn);
+  }
+}
+
+body {
+  overflow: hidden;
+  margin: 0;
+}
+
+div {
+  width: 100px;
+  height: 100px;
+  margin: 0;
+  background: radial-gradient(white, black);
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+div:before, div:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: 100px;
+  opacity: .5;
+  mix-blend-mode: overlay;
+  -webkit-animation: rotate 2.6s ease-in-out infinite;
+          animation: rotate 2.6s ease-in-out infinite;
+}
+
+div:before {
+  background: conic-gradient(rgba(3, 10, 0, 0.02), rgba(3, 10, 0, 0.35), rgba(3, 10, 0, 0.37), rgba(3, 10, 0, 0.84), rgba(3, 10, 0, 0.36), rgba(3, 10, 0, 0.56), rgba(3, 10, 0, 0.71), rgba(3, 10, 0, 0.74), rgba(3, 10, 0, 0.69), rgba(3, 10, 0, 0.1), rgba(3, 10, 0, 0.69), rgba(3, 10, 0, 0.64), rgba(3, 10, 0, 0.31), rgba(3, 10, 0, 0.83), rgba(3, 10, 0, 0.53), rgba(3, 10, 0, 0.23), rgba(3, 10, 0, 0.6), rgba(3, 10, 0, 0.91), rgba(3, 10, 0, 0.14), rgba(3, 10, 0, 0.09), rgba(3, 10, 0, 0.5), rgba(3, 10, 0, 0.99), rgba(3, 10, 0, 0.53), rgba(3, 10, 0, 0.76), rgba(3, 10, 0, 0.57), rgba(3, 10, 0, 0.6), rgba(3, 10, 0, 0.3), rgba(3, 10, 0, 0.02), rgba(3, 10, 0, 0.35), rgba(3, 10, 0, 0.37), rgba(3, 10, 0, 0.84), rgba(3, 10, 0, 0.36), rgba(3, 10, 0, 0.56), rgba(3, 10, 0, 0.71), rgba(3, 10, 0, 0.74), rgba(3, 10, 0, 0.69), rgba(3, 10, 0, 0.1), rgba(3, 10, 0, 0.69), rgba(3, 10, 0, 0.64), rgba(3, 10, 0, 0.31), rgba(3, 10, 0, 0.83), rgba(3, 10, 0, 0.53), rgba(3, 10, 0, 0.23), rgba(3, 10, 0, 0.6), rgba(3, 10, 0, 0.91), rgba(3, 10, 0, 0.14), rgba(3, 10, 0, 0.09), rgba(3, 10, 0, 0.5), rgba(3, 10, 0, 0.99), rgba(3, 10, 0, 0.53), rgba(3, 10, 0, 0.76), rgba(3, 10, 0, 0.57), rgba(3, 10, 0, 0.6));
+}
+
+div:after {
+  background: conic-gradient(rgba(3, 10, 0, 0.59), rgba(3, 10, 0, 0.23), rgba(3, 10, 0, 0.21), rgba(3, 10, 0, 0.81), rgba(3, 10, 0, 0.03), rgba(3, 10, 0, 0.3), rgba(3, 10, 0, 0.61), rgba(3, 10, 0, 0.81), rgba(3, 10, 0, 0.66), rgba(3, 10, 0, 0.25), rgba(3, 10, 0, 0.66), rgba(3, 10, 0, 0.43), rgba(3, 10, 0, 0.22), rgba(3, 10, 0, 0.33), rgba(3, 10, 0, 0.07), rgba(3, 10, 0, 0.68), rgba(3, 10, 0, 0.28), rgba(3, 10, 0, 0.7), rgba(3, 10, 0, 0.87), rgba(3, 10, 0, 0.11), rgba(3, 10, 0, 0.15), rgba(3, 10, 0, 0.93), rgba(3, 10, 0, 0.9), rgba(3, 10, 0, 0.75), rgba(3, 10, 0, 0.07), rgba(3, 10, 0, 0.43), rgba(3, 10, 0, 0.51), rgba(3, 10, 0, 0.45), rgba(3, 10, 0, 0.59), rgba(3, 10, 0, 0.23), rgba(3, 10, 0, 0.21), rgba(3, 10, 0, 0.81), rgba(3, 10, 0, 0.03), rgba(3, 10, 0, 0.3), rgba(3, 10, 0, 0.61), rgba(3, 10, 0, 0.81), rgba(3, 10, 0, 0.66), rgba(3, 10, 0, 0.25), rgba(3, 10, 0, 0.66), rgba(3, 10, 0, 0.43), rgba(3, 10, 0, 0.22), rgba(3, 10, 0, 0.33), rgba(3, 10, 0, 0.07), rgba(3, 10, 0, 0.68), rgba(3, 10, 0, 0.28), rgba(3, 10, 0, 0.7), rgba(3, 10, 0, 0.87), rgba(3, 10, 0, 0.11), rgba(3, 10, 0, 0.15), rgba(3, 10, 0, 0.93), rgba(3, 10, 0, 0.9), rgba(3, 10, 0, 0.75), rgba(3, 10, 0, 0.07), rgba(3, 10, 0, 0.43), rgba(3, 10, 0, 0.51));
+  -webkit-animation-duration: 8.5s;
+          animation-duration: 8.5s;
+  animation-direction: reverse;
+}
+/*# sourceMappingURL=css.css.map */

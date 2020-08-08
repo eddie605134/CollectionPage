@@ -1,0 +1,329 @@
+@import '_style_guid'
+
+.title_style
+    border: 1px solid #38495a
+    width: 150px
+    height: 50px
+    border-radius: 10px
+    display: flex
+    justify-content: center
+    align-items: center
+    .title_inner
+        background: #38495a
+        width: 138px
+        height: 36px
+        border-radius: 8px
+        border-radius: 10px
+        display: flex
+        justify-content: center
+        align-items: center
+        color: white
+.swiper-container
+    width: 100%
+    height: 100%
+    .swiper-wrapper
+        text-align: center
+        .swiper-slide
+            display: flex
+            justify-content: center
+            align-items: center
+    .swiper-button-next::before
+        content: " "
+        position: absolute
+        top: 0
+        width: 34px
+        height: 50px
+        background-image: url("../img/nextarrow.png")
+        background-position: center
+        background-size: cover
+        filter: hue-rotate(23deg)
+        z-index: 99
+
+    .swiper-button-prev::before
+        content: " "
+        position: absolute
+        top: 0
+        width: 34px
+        height: 50px
+        background-image: url("../img/pre.png")
+        background-position: center
+        background-size: cover
+        filter: hue-rotate(23deg)
+        z-index: 99
+    .swiper-button-next:after,
+    .swiper-button-prev:after
+        color: #7d4136
+*.good_card
+    background-color: white
+    border-radius: 10px
+    display: flex
+    flex-direction: column
+    align-items: center
+    padding: 0 0 10px 0
+    text-align: justify
+    letter-spacing: 2px
+    position: relative
+    cursor: pointer
+    filter: drop-shadow(3px 3px 2px #38495a)
+    &:hover .mask
+        opacity: 1
+        transition: 1s
+        transform: rotateY(1turn)
+    .mask
+        position: absolute
+        top: 0
+        left: 0
+        background-color: #6D9EB2
+        width: 100%
+        height: 100%
+        border-radius: 10px
+        z-index: 99
+        opacity: 0
+        transition: 1s
+        display: flex
+        justify-content: center
+        align-items: center
+        transform: rotateY(0.5turn)
+        .hover_btn
+            width: 110px
+            height: 68px
+            background: #75A4E0
+            border-radius: 30px
+            border: 1px solid white
+            color: white
+    .img_area
+        padding: 10px
+        @media (max-width:990px)
+        img
+            width: 150px
+
+            @media (max-width:1200px)
+                width: 130px
+    .gcard_title
+        color: black
+        margin-bottom: 10px
+body
+    #app
+        margin: 0
+        box-sizing: border-box
+        min-width: 360px
+        .aud
+            position: fixed
+            right: 10px
+            top: 10px
+            z-index: 99
+            .aud_inner
+                width: 25vmin
+                height: 10vmin
+                border-radius: 15px
+                background: rgb(16, 98, 133)
+                padding-right: 0.95em
+                padding-top: 0.4em
+                clip-path: circle( 15% at 84% 31% )
+                transition: all .5s ease-in-out
+                &:hover
+                    clip-path: circle( 75% )
+                    background: rgb(63, 125, 162)
+                    box-shadow: 0px 1px 7px rgb(222, 222, 222)
+                    transform: translateY(-1.5px)
+                &:hover .aud_img
+                    opacity: 0
+                .player
+                    .row
+                        .col-12
+                            margin-bottom: 15px
+                            .player_title
+                                color: white
+                                background: -webkit-linear-gradient(#DC8711, white)
+                                -webkit-background-clip: text
+                                -webkit-text-fill-color: transparent
+                        .col-6
+                            .begin
+                                width: 6vmin
+                                height: 3vmin
+                                background: -webkit-linear-gradient(white, #38495a)
+                                text-align: center
+                                line-height: 2.5vmin
+                                cursor: pointer
+                                border-radius: 3px
+                                transition: 0.2s
+                                &:hover
+                                    box-shadow: 0px 0.5px 5px #000000
+                        .col-6
+                            .stop
+                                width: 6vmin
+                                height: 3vmin
+                                background: -webkit-linear-gradient(white, #38495a)
+                                text-align: center
+                                line-height: 2.5vmin
+                                cursor: pointer
+                                border-radius: 3px
+                                transition: 0.2s
+                                &:hover
+                                    box-shadow: 0px 0.5px 5px #000000
+                .aud_img
+                    width: 20%
+                    padding: 5px
+                    background: -webkit-linear-gradient(white, #38495a)
+                    -webkit-background-clip: text
+                    float: right
+                    transition: all .8s ease-in-out
+                    svg
+                        fill: url(#myGradient)
+
+
+
+
+        main
+            .detail
+                .detail_container
+                    padding-top: 40px
+                    .row
+                        .detail_title
+                            .title_btn
+                                @extend .title_style
+                        .detail_content
+                            width: 100%
+                            padding: 30px 50px
+                            .content_card
+                                background-color: rgba(225,225,225,0.3)
+                                border-radius: 10px
+                                padding: 30px
+                                filter: drop-shadow(0px 0px 30px #38495a)
+                                .row
+                                    .img_area
+                                        padding: 20px 30px
+                                        @media (max-width:540px)
+                                            padding: 0
+                                        .hrad_img
+                                            width: 100%
+                                            height: 100%
+                                            background-image: url("/img/headphoto.jpg")
+                                            background-size: 250%
+                                            background-position: 80% 38%
+                                            background-repeat: no-repeat
+                                            min-height: 280px
+                                    .content_area
+                                        padding-top: 20px
+                                        text-align: justify
+
+                                        @media (max-width:1120px)
+                                            padding-top: 0px
+                                            display: flex
+                                            flex-direction: column
+                                        .row
+                                            .text
+                                                display: flex
+                                                padding-top: 5px
+                                                .title
+                                                    color: #eeeeee
+                                                    font-size: 28px
+                                                    font-weight: bold
+                                                    margin-right: 36px
+                                                .detail
+                                                    color: #eeeeee
+                                                    font-size: 18px
+                                                    @media (max-width:540px)
+                                                        border-bottom: 1px solid #606060
+                                            .line
+                                                width: 80%
+                                                border: 0.5px solid #606060
+                                                transform: translateX(15px)
+                                                margin: 10px 0px
+
+                                            .text_less
+                                                display: flex
+                                                .title
+                                                    color: #eeeeee
+                                                    font-size: 18px
+                                                    font-weight: bold
+                                                    margin-right: 36px
+
+                                                .detail_less
+                                                    padding-top: 5px
+                                                    p
+                                                        color: #eeeeee
+                                                        font-size: 18px
+                                            .change_btn_area
+                                                a
+                                                    text-decoration: none
+                                                    color: white
+                                                    font-weight: bold
+                                                    .change_btn
+                                                        width: 260px
+                                                        height: 70px
+                                                        background-color: #ED7088
+                                                        line-height: 1
+                                                        border-radius: 10px
+                                                        display: flex
+                                                        justify-content: center
+                                                        align-items: center
+                                                        font-size: 32px
+            .skill
+                .skill_container
+                    .row
+                        .skill_title
+                            width: 100%
+                            .title_btn
+                                @extend .title_style
+                        .skill_content
+                            padding: 30px 50px
+                            width: 100%
+                            .skill_card
+                                background-color: #d9eaf1
+                                border-radius: 10px
+                                padding: 30px
+
+
+                                .row
+                                    .col-4
+                                        .what_skill
+                                            .skill_title
+                                                font-size: 28px
+                                        ul
+                                            padding-inline-start: 20px
+                                            li
+                                                font-weight: bold
+
+
+            .profile
+                .profile_container
+                    .row
+                        .profile_title
+                            width: 100%
+                            .title_btn
+                                @extend .title_style
+                        .profile_content
+                                padding: 30px 50px
+                                width: 100%
+                        .row
+                            margin-right: 0
+                            margin-left: 0
+
+        footer
+            width: 100%
+            height: 100px
+            display: flex
+            justify-content: flex-end
+            align-items: flex-end
+            .copyRight
+                a
+                    color: #eeeeee
+                    text-decoration: none
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
