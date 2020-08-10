@@ -1,3 +1,7 @@
+
+/*
+    box-shadow: 0px 3.5px 4px #F7C047*/
+
 @mixin keyframes($animationName)
     @keyframes #{$animationName}
         @content;
@@ -10,15 +14,18 @@
     0%
         transform: translateY(0) translateX(0)
         background-color: rgba(255, 255, 255, .4)
+        box-shadow: 0px 0px 10px #F7C047,0px 0px 40px #F7C047,0px 0px 80px #F7C047
     25%
-        transform: translateY(150)
+        box-shadow: 0px 0px 8px #94783a93,0px 0px 40px #77633773,0px 0px 0px #967a3f83
     50%
-        transform: translateY(350)
+        box-shadow: 0px 0px 6px #7e7c7950,0px 0px 10px #302f2c6b,0px 0px 0px #4d3f2342
+
     75%
-        transform: translateY(650)
+        box-shadow: 0px 0px 0px #e0ca9942,0px 0px 0px #756e5e33,0px 0px 0px #8d8d8d
     100%
-        transform: scale(2.5) translateY(-1000px)
+        transform: scale(2.5) translateY(-800px)
         background-color: rgba(255, 255, 255, 0)
+        box-shadow: unset
 
 ul
     list-style: none
@@ -48,7 +55,6 @@ body
             animation: square 17s infinite
             transition-timing-function: linear
             border-radius: 50%
-            box-shadow: 0px 3.5px 1px -2px #F7C047
             @for $i from 1 through 20
                 $variable: randomNum(40,120)
                 &:nth-child(#{$i})

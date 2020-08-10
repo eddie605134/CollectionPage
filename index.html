@@ -47,12 +47,9 @@
                         class="svg-inline--fa fa-headphones-alt fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 512 512">
                         <defs>
-                            <linearGradient id="myGradient"
-                                    x1="0%" y1="0%"
-                                    x2="0%" y2="100%"
-                                    spreadMethod="pad">
-                              <stop offset="0%"   stop-color="#5387A8" stop-opacity="1"/>
-                              <stop offset="100%" stop-color="#A67BB0" stop-opacity="1"/>
+                            <linearGradient id="myGradient" x1="0%" y1="0%" x2="0%" y2="100%" spreadMethod="pad">
+                                <stop offset="0%" stop-color="#5387A8" stop-opacity="1" />
+                                <stop offset="100%" stop-color="#A67BB0" stop-opacity="1" />
                             </linearGradient>
                         </defs>
                         <path
@@ -101,7 +98,7 @@
                                     <div class="img_area col-12-sm col-lg-5">
                                         <div class="hrad_img"></div>
 
-                                        <img src="" width="100%"  alt="">
+                                        <img src="" width="100%" alt="">
                                     </div>
                                     <div class="content_area col-12-sm col-lg-7">
                                         <div class="row">
@@ -124,23 +121,31 @@
 
                                             <div class="line"></div>
 
-                                            <div class="col-12-sm col-lg-12 text_less d-flex flex-column" >
+                                            <div class="col-12-sm col-lg-12 text_less d-flex flex-column">
                                                 <div class="title">自述 : </div>
                                                 <div class="detail_less">
-                                                    <p>前端目前是用<span style="color: #41B883; font-weight: bold">vue.js</span>框架做開發，正在學習<span style="color: #35495E; font-weight: bold; -webkit-text-stroke-width: 1px; -webkit-text-stroke-color: #41B883;">vue cli</span>做vue-router頁面切換與vuex狀態管理，短期目標是做出SSR網站。畫面生成正琢磨<span style="color: #ED225D; font-weight: bold">p5.js</span>的canvas繪製以及CSS3 animation，希望能生成更活潑的互動畫面。後端學習地圖是整合<span style="color: #41B883; font-weight: bold">vue.js</span>與<span style="color: #FF2D20; font-weight: bold">laravel</span>，目前只做出簡易後台與簡易CRUD功能(2020/8月)</p>
+                                                    <p>前端目前是用<span
+                                                            style="color: #41B883; font-weight: bold">vue.js</span>框架做開發，正在學習<span
+                                                            style="color: #35495E; font-weight: bold; -webkit-text-stroke-width: 1px; -webkit-text-stroke-color: #41B883;">vue
+                                                            cli</span>做vue-router頁面切換與vuex狀態管理，短期目標是做出SSR網站。畫面生成正琢磨<span
+                                                            style="color: #ED225D; font-weight: bold">p5.js</span>的canvas繪製以及CSS3
+                                                        animation，希望能生成更活潑的互動畫面。後端學習地圖是整合<span
+                                                            style="color: #41B883; font-weight: bold">vue.js</span>與<span
+                                                            style="color: #FF2D20; font-weight: bold">laravel</span>，目前只做出簡易後台與簡易CRUD功能(2020/8月)
+                                                    </p>
                                                 </div>
                                             </div>
                                             <div class="change_btn_area col-lg-12 d-flex justify-content-center">
 
 
-                                        </div>
+                                            </div>
 
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
             </section>
 
             <!-- swipertest -->
@@ -219,67 +224,27 @@
                         <div class="profile_content row swiper-container">
 
                             <div class="swiper-wrapper">
-                                <div class="swiper-slide">
+                                <!--  -->
+                                <div class="swiper-slide" v-for="resume of resumes" :key="resume.id">
                                     <div class="col-lg-12 col-10">
                                         <div class="good_card">
-                                            <div class="mask">
-                                                <button type="button" class="hover_btn">前往察看</button>
-                                            </div>
+                                            <a :href="resume.page" target="_blank">
+                                                <div class="mask">
+                                                    <div class="explain">{{resume.spr}}
+                                                    </div>
+                                                    <button type="button" class="hover_btn">前往察看</button>
+                                                </div>
+                                            </a>
+
                                             <div class="img_area ">
-                                                <img src="./img/3184cbd298f6bf11c825601e1897d4e8.jpg" width="100%"
-                                                    alt="">
+                                                <img :src="resume.img" width="100%" alt="">
                                             </div>
-                                            <div class="gcard_title"> 鯊鯊給游 </div>
+                                            <div class="gcard_title"> {{resume.name}} </div>
                                         </div>
 
                                     </div>
                                 </div>
-
-                                <div class="swiper-slide">
-                                    <div class="col-lg-12 col-10">
-                                        <div class="good_card">
-                                            <div class="mask">
-                                                <button type="button" class="hover_btn">前往察看</button>
-                                            </div>
-                                            <div class="img_area ">
-                                                <img src="./img/3184cbd298f6bf11c825601e1897d4e8.jpg" width="100%"
-                                                    alt="">
-                                            </div>
-                                            <div class="gcard_title"> 鯊鯊給游 </div>
-                                        </div>
-
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="col-lg-12 col-10">
-                                        <div class="good_card">
-                                            <div class="mask">
-                                                <button type="button" class="hover_btn">前往察看</button>
-                                            </div>
-                                            <div class="img_area ">
-                                                <img src="./img/3184cbd298f6bf11c825601e1897d4e8.jpg" width="100%"
-                                                    alt="">
-                                            </div>
-                                            <div class="gcard_title"> 鯊鯊給游 </div>
-                                        </div>
-
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="col-lg-12 col-10">
-                                        <div class="good_card">
-                                            <div class="mask">
-                                                <button type="button" class="hover_btn">前往察看</button>
-                                            </div>
-                                            <div class="img_area ">
-                                                <img src="./img/3184cbd298f6bf11c825601e1897d4e8.jpg" width="100%"
-                                                    alt="">
-                                            </div>
-                                            <div class="gcard_title"> 鯊鯊給游 </div>
-                                        </div>
-
-                                    </div>
-                                </div>
+                                <!--  -->
                             </div>
 
                             <div class="swiper-button-next"></div>
@@ -295,7 +260,7 @@
                 邊框 png from pngtree.com</a>
             </div>
 
-            </footer>
+        </footer>
     </div>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
@@ -324,7 +289,8 @@
         var app = new Vue({
             el: '#app',
             data: {
-                LoaderVisiable: false
+                LoaderVisiable: false,
+                resumes:[]
             },
             components: {
                 Loading: VueLoading
@@ -336,15 +302,18 @@
                     });
                     setTimeout(() => loader.hide(), 3 * 1000);
                 },
-                audioStart(){
+                audioStart() {
                     this.$refs.music.play()
                 },
-                audioStop(){
+                audioStop() {
                     this.$refs.music.pause()
                 }
             },
-            mounted() {
-                var swiper = new Swiper('.swiper-container', {
+            async mounted() {
+                this.resumes = _.get(await axios.get('https://eddie605134.github.io/romon30/resume.json'), 'data', [])
+            },
+            updated(){
+                new Swiper('.swiper-container', {
                     slidesPerView: 4,
                     spaceBetween: 40,
                     slidesPerGroup: 1,
@@ -394,4 +363,5 @@
     </script>
 
 </body>
+
 </html>

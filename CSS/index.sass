@@ -1,7 +1,7 @@
 @import '_style_guid'
 
 .title_style
-    border: 1px solid #38495a
+    border: 2px solid #38495a
     width: 150px
     height: 50px
     border-radius: 10px
@@ -53,8 +53,8 @@
     .swiper-button-next:after,
     .swiper-button-prev:after
         color: #7d4136
-*.good_card
-    background-color: white
+.good_card
+    background-color: #d9eaf1
     border-radius: 10px
     display: flex
     flex-direction: column
@@ -65,43 +65,67 @@
     position: relative
     cursor: pointer
     filter: drop-shadow(3px 3px 2px #38495a)
+    height: 250px
     &:hover .mask
         opacity: 1
         transition: 1s
-        transform: rotateY(1turn)
-    .mask
-        position: absolute
-        top: 0
-        left: 0
-        background-color: #6D9EB2
-        width: 100%
-        height: 100%
-        border-radius: 10px
-        z-index: 99
-        opacity: 0
-        transition: 1s
-        display: flex
-        justify-content: center
-        align-items: center
-        transform: rotateY(0.5turn)
-        .hover_btn
-            width: 110px
-            height: 68px
-            background: #75A4E0
-            border-radius: 30px
-            border: 1px solid white
+        transform: rotateY(1turn) scale(1)
+    a
+        text-decoration: none
+        color: white
+        .mask
             color: white
+            position: absolute
+            top: 0
+            left: 0
+            background-color: #6D9EB2
+            width: 100%
+            height: 100%
+            border-radius: 10px
+            z-index: 99
+            opacity: 0
+            transition: 1s
+            display: flex
+            justify-content: space-around
+            align-items: center
+            flex-direction: column
+            transform: rotateY(0.5turn) scale(0.5)
+            padding-bottom: 10px
+            &:hover .explain
+                display: block
+            .hover_btn
+                width: 110px
+                height: 34px
+                background: #75A4E0
+                border-radius: 30px
+                border: 1px solid white
+                color: white
+                transition: 0.5s
+                &:hover
+                    border: 1px solid #75A4E0
+                    background-color: #eeeeee
+                    color: #75A4E0
+                    box-shadow:  1px 1px 5px darken(#75A4E0,20) inset
+            .explain
+                width: 100%
+                word-break: break-word
+                text-align: justify
+                padding: 5px 10px
+                font-size: 16px
+
     .img_area
         padding: 10px
+        margin-bottom: 30px
         @media (max-width:990px)
         img
             width: 150px
-
+            height: 125px
             @media (max-width:1200px)
                 width: 130px
     .gcard_title
         color: black
-        margin-bottom: 10px
+
+        font-weight: bold
 body
     #app
         margin: 0
@@ -198,7 +222,7 @@ body
                                         .hrad_img
                                             width: 100%
                                             height: 100%
-                                            background-image: url("/img/headphoto.jpg")
+                                            background-image: url("/img/headphoto.webp")
                                             background-size: 250%
                                             background-position: 80% 38%
                                             background-repeat: no-repeat
