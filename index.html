@@ -28,6 +28,11 @@
                 transform: translateX(0px);
             }
         }
+
+        #wave{
+
+            transform: scaleY(-1);
+        }
     </style>
 
 </head>
@@ -99,8 +104,13 @@
 
             </div>
         </div>
-        <nav></nav>
+        <nav id="wave">
+            <div class="bt1"></div>
+            <div class="bt2"></div>
+            <svg width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs></defs><path id="myID" d=""/></svg>
+        </nav>
         <main>
+
             <section class="detail">
                 <div class="detail_container container">
                     <div class="row">
@@ -310,6 +320,9 @@
     <script src="https://cdn.jsdelivr.net/npm/vue-loading-overlay@3"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.15/lodash.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.1.1/gsap.min.js" integrity="sha512-0RYHqoOARmpxNEw+esxNHXaPoXWU36swC8a5BgmnexZNmOhDewCvKRNWitJiwf40o8JUsg831Uu/cRIN7sCdKA==" crossorigin="anonymous"></script>
+    <script src="./JS/wavify.js"></script>
+    <script src="./JS/jquery.wavify.js"></script>
 
 
 
@@ -450,6 +463,13 @@
             $(".bg-bubbles li").css({ 'transform': `translateX(${positionX}px` });
         });*/
 
+        var myWave = $('#myID').wavify({
+            height: 30,
+            bones: 3,
+            amplitude: 40,
+            color: 'rgba(209, 212, 221,0.2)',
+            speed: .25
+          });
 
 
 
