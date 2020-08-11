@@ -1,6 +1,20 @@
 
-/*
-    box-shadow: 0px 3.5px 4px #F7C047*/
+@mixin size($w,$h:$w)
+    width: #{$w}px
+    height: #{$h}px
+
+@mixin circle($r)
+    +size($r)
+    border-radius: 50%
+@mixin ab_center
+    position: absolute
+    left: 50%
+    top: 50%
+    transform: translate(-50%,-50%)
+@mixin center
+    display: flex
+    justify-content: center
+    align-items: center
 
 @mixin keyframes($animationName)
     @keyframes #{$animationName}
@@ -26,6 +40,33 @@
         transform: scale(2.5) translateY(-800px)
         background-color: rgba(255, 255, 255, 0)
         box-shadow: unset
+@include keyframes(fontani)
+    0%
+        transform: rotate(0deg)
+    80%
+        transform: rotate(350deg)
+    100%
+        transform: rotate(315deg)
+@include keyframes(backani)
+    0%
+        transform: rotate(0deg)
+    100%
+        transform: rotate(360deg)
+@include keyframes(artani)
+    0%
+        transform: rotate(0deg)
+    80%
+        transform: rotate(-350deg)
+    100%
+        transform: rotate(-315deg)
+
+.fontani
+    animation: fontani 1s forwards
+.backani
+    animation: backani 1s forwards
+.artani
+    animation: artani 1s forwards
+
 
 ul
     list-style: none

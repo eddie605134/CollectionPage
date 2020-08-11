@@ -10,6 +10,25 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/vue-loading-overlay@3/dist/vue-loading.css" rel="stylesheet">
+    <style>
+        .a-enter-active{
+            animation: eddie 0.5s;
+        }
+        .a-leave-active{
+            animation: eddie 0.5s reverse;
+        }
+
+        @keyframes eddie{
+            0%{
+                opacity: 0;
+                transform: translateX(100px);
+            }
+            100%{
+                opacity: 1;
+                transform: translateX(0px);
+            }
+        }
+    </style>
 
 </head>
 
@@ -162,28 +181,49 @@
                             </div>
                         </div>
                         <div class="skill_content">
+
                             <div class="skill_card">
                                 <div class="row">
-                                    <div class="col-4">
-                                        <div class="what_skill">
-                                            <div class="skill_title">前端技能</div>
-                                            <hr>
-                                            <ul>
-                                                <li>vue.js</li>
-                                                <li>javascript ( ES5，ES6 ) </li>
-                                                <li>JQuery</li>
-                                                <li>HTML / HTML5</li>
-                                                <li>CSS / CSS3</li>
-                                                <li>SASS / SCSS</li>
-                                                <li>bootstrap</li>
-                                                <li>RWD</li>
-                                                <li>JSON</li>
-                                                <li>Ajax</li>
-                                                <li>串接API (axios,fetch)</li>
-                                            </ul>
-                                        </div>
+                                    <div class="col-12">
+                                        <transition name="a" mode="out-in">
+                                            <div class="what_skill" v-if="transitiona == 'a'" key="1">
+                                                <div class="skill_title">前端技能</div>
+                                                <hr>
+                                                <ul>
+                                                    <li>vue.js</li>
+                                                    <li>javascript ( ES5，ES6 ) </li>
+                                                    <li>JQuery</li>
+                                                    <li>HTML / HTML5</li>
+                                                    <li>CSS / CSS3</li>
+                                                    <li>SASS / SCSS</li>
+                                                    <li>bootstrap</li>
+                                                    <li>RWD</li>
+                                                    <li>JSON</li>
+                                                    <li>Ajax</li>
+                                                    <li>串接API (axios,fetch)</li>
+                                                </ul>
+                                            </div>
+
+                                            <div class="what_skill" v-else-if="transitiona == 'b'" key="2">
+                                                <div class="skill_title">後端技能</div>
+                                                <hr>
+                                                <ul>
+                                                    <li>Laravel(待補強)</li>
+                                                </ul>
+                                            </div>
+
+                                            <div class="what_skill" v-else key="3">
+                                                <div class="skill_title">美術技能</div>
+                                                <hr>
+                                                <ul>
+                                                    <li>Illustrator</li>
+                                                    <li>PhotoShop</li>
+                                                </ul>
+                                            </div>
+
+                                        </transition>
                                     </div>
-                                    <div class="col-4">
+                                    <!-- <div class="col-4">
                                         <div class="what_skill">
                                             <div class="skill_title">後端技能</div>
                                             <hr>
@@ -201,6 +241,17 @@
                                                 <li>PhotoShop</li>
                                             </ul>
                                         </div>
+                                    </div> -->
+                                </div>
+                                <div class="wheel" ref="wheel" :class="wheelA">
+                                    <div class="front" ref="front" @click="fontHandler">
+                                        <div class="word" ref="fronts">前</div>
+                                    </div>
+                                    <div class="back" ref="back" @click="backHandler">
+                                        <div class="word" ref="backs">後</div>
+                                    </div>
+                                    <div class="art" ref="art" @click="artHandler">
+                                        <div class="word" ref="arts">美</div>
                                     </div>
                                 </div>
                             </div>
@@ -257,7 +308,7 @@
         </main>
         <footer>
             <div class="copyRight">
-                邊框 png from pngtree.com</a>
+
             </div>
 
         </footer>
@@ -284,13 +335,29 @@
 
 
 
+
         Vue.use(VueLoading);
 
-        var app = new Vue({
+        Vue.component('googleUser', {
+            template: `
+            <div>
+                <slot name="a"></slot>
+                <ul>
+                    <li>456464864458464</li>
+                </ul>
+                我是一個用戶
+                <slot name="b"></slot>
+            </div>
+            `,
+        })
+
+        let vm = new Vue({
             el: '#app',
             data: {
                 LoaderVisiable: false,
-                resumes:[]
+                resumes:[],
+                wheelA: "fontani",
+                transitiona:"a"
             },
             components: {
                 Loading: VueLoading
@@ -307,10 +374,53 @@
                 },
                 audioStop() {
                     this.$refs.music.pause()
+                },
+                re0() {
+                    this.$refs.fronts.style.transform = "rotate(0deg)"
+                    this.$refs.backs.style.transform = "rotate(0deg)"
+                    this.$refs.arts.style.transform = "rotate(0deg)"
+                },
+                fontHandler() {
+                    this.wheelA = "fontani"
+                    this.re0()
+                    this.$refs.fronts.style.transform = "rotate(45deg)"
+                    this.$refs.backs.style.transform = "rotate(45deg)"
+                    this.$refs.arts.style.transform = "rotate(45deg)"
+                    this.transitiona = "a"
+                },
+                backHandler() {
+                    this.wheelA = "backani"
+                    this.re0()
+                    this.transitiona = "b"
+                },
+                artHandler() {
+                    this.wheelA = "artani"
+                    this.re0()
+                    this.$refs.fronts.style.transform = "rotate(-45deg)"
+                    this.$refs.backs.style.transform = "rotate(-45deg)"
+                    this.$refs.arts.style.transform = "rotate(-45deg)"
+                    this.transitiona = "c"
                 }
             },
             async mounted() {
                 this.resumes = _.get(await axios.get('https://eddie605134.github.io/romon30/resume.json'), 'data', [])
+
+                let r = 250
+                let fx = r * Math.cos((225 / 360) * ((Math.PI * 2))) - 50
+                let fy = r * Math.sin((225 / 360) * ((Math.PI * 2))) - 50
+                vm.$refs.front.style.transform = `translate(${fx}px,${fy}px)`
+
+                let bx = r * Math.cos((180 / 360) * ((Math.PI * 2))) - 50
+                let by = r * Math.sin((180 / 360) * ((Math.PI * 2))) - 50
+                vm.$refs.back.style.transform = `translate(${bx}px,${by}px)`
+
+                let ax = r * Math.cos((135 / 360) * ((Math.PI * 2))) - 50
+                let ay = r * Math.sin((135 / 360) * ((Math.PI * 2))) - 50
+                vm.$refs.art.style.transform = `translate(${ax}px,${ay}px)`
+
+                this.$refs.fronts.style.transform = "rotate(45deg)"
+                this.$refs.backs.style.transform = "rotate(45deg)"
+                this.$refs.arts.style.transform = "rotate(45deg)"
             },
             updated(){
                 new Swiper('.swiper-container', {
@@ -356,9 +466,10 @@
             let positionX = (e.pageX - $(window).width() / 2) * -0.05;
             let positionY = (e.pageY - $(window).height() / 2) * -0.05;
             $(".bg-bubbles li").css({ 'transform': `translateX(${positionX}px` });
-
-
         });*/
+
+
+
 
     </script>
 
