@@ -196,122 +196,122 @@ body {
 
 #app .bg-bubbles li:nth-child(1) {
   left: 5%;
-  -webkit-animation-duration: 12s;
-          animation-duration: 12s;
+  -webkit-animation-duration: 19s;
+          animation-duration: 19s;
   -webkit-animation-delay: 0s;
           animation-delay: 0s;
-  width: 102px;
-  height: 102px;
+  width: 84px;
+  height: 84px;
 }
 
 #app .bg-bubbles li:nth-child(2) {
   left: 10%;
-  -webkit-animation-duration: 12s;
-          animation-duration: 12s;
-  -webkit-animation-delay: 5s;
-          animation-delay: 5s;
-  width: 56px;
-  height: 56px;
+  -webkit-animation-duration: 11s;
+          animation-duration: 11s;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  width: 62px;
+  height: 62px;
 }
 
 #app .bg-bubbles li:nth-child(3) {
   left: 15%;
-  -webkit-animation-duration: 13s;
-          animation-duration: 13s;
-  -webkit-animation-delay: -5s;
-          animation-delay: -5s;
-  width: 119px;
-  height: 119px;
+  -webkit-animation-duration: 19s;
+          animation-duration: 19s;
+  -webkit-animation-delay: -2s;
+          animation-delay: -2s;
+  width: 45px;
+  height: 45px;
 }
 
 #app .bg-bubbles li:nth-child(4) {
   left: 20%;
-  -webkit-animation-duration: 12s;
-          animation-duration: 12s;
-  -webkit-animation-delay: 9s;
-          animation-delay: 9s;
-  width: 83px;
-  height: 83px;
+  -webkit-animation-duration: 18s;
+          animation-duration: 18s;
+  -webkit-animation-delay: -4s;
+          animation-delay: -4s;
+  width: 74px;
+  height: 74px;
 }
 
 #app .bg-bubbles li:nth-child(5) {
   left: 25%;
-  -webkit-animation-duration: 16s;
-          animation-duration: 16s;
-  -webkit-animation-delay: -2s;
-          animation-delay: -2s;
-  width: 55px;
-  height: 55px;
+  -webkit-animation-duration: 13s;
+          animation-duration: 13s;
+  -webkit-animation-delay: 6s;
+          animation-delay: 6s;
+  width: 81px;
+  height: 81px;
 }
 
 #app .bg-bubbles li:nth-child(6) {
   left: 30%;
-  -webkit-animation-duration: 12s;
-          animation-duration: 12s;
-  -webkit-animation-delay: 5s;
-          animation-delay: 5s;
-  width: 54px;
-  height: 54px;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+  width: 107px;
+  height: 107px;
 }
 
 #app .bg-bubbles li:nth-child(7) {
   left: 35%;
-  -webkit-animation-duration: 12s;
-          animation-duration: 12s;
-  -webkit-animation-delay: -2s;
-          animation-delay: -2s;
-  width: 66px;
-  height: 66px;
+  -webkit-animation-duration: 15s;
+          animation-duration: 15s;
+  -webkit-animation-delay: 7s;
+          animation-delay: 7s;
+  width: 90px;
+  height: 90px;
 }
 
 #app .bg-bubbles li:nth-child(8) {
   left: 40%;
   -webkit-animation-duration: 10s;
           animation-duration: 10s;
-  -webkit-animation-delay: -4s;
-          animation-delay: -4s;
-  width: 108px;
-  height: 108px;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+  width: 58px;
+  height: 58px;
 }
 
 #app .bg-bubbles li:nth-child(9) {
   left: 45%;
-  -webkit-animation-duration: 20s;
-          animation-duration: 20s;
-  -webkit-animation-delay: -5s;
-          animation-delay: -5s;
-  width: 78px;
-  height: 78px;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+  -webkit-animation-delay: 10s;
+          animation-delay: 10s;
+  width: 75px;
+  height: 75px;
 }
 
 #app .bg-bubbles li:nth-child(10) {
   left: 50%;
-  -webkit-animation-duration: 11s;
-          animation-duration: 11s;
-  -webkit-animation-delay: 10s;
-          animation-delay: 10s;
-  width: 98px;
-  height: 98px;
+  -webkit-animation-duration: 13s;
+          animation-duration: 13s;
+  -webkit-animation-delay: 9s;
+          animation-delay: 9s;
+  width: 111px;
+  height: 111px;
 }
 
 #app .bg-bubbles li:nth-child(11) {
   left: 55%;
   -webkit-animation-duration: 14s;
           animation-duration: 14s;
-  -webkit-animation-delay: 10s;
-          animation-delay: 10s;
-  width: 70px;
-  height: 70px;
+  -webkit-animation-delay: -4s;
+          animation-delay: -4s;
+  width: 92px;
+  height: 92px;
 }
 
 #app .bg-bubbles li:nth-child(12) {
   left: 60%;
-  -webkit-animation-duration: 11s;
-          animation-duration: 11s;
-  -webkit-animation-delay: -3s;
-          animation-delay: -3s;
-  width: 46px;
-  height: 46px;
+  -webkit-animation-duration: 17s;
+          animation-duration: 17s;
+  -webkit-animation-delay: 9s;
+          animation-delay: 9s;
+  width: 118px;
+  height: 118px;
 }
 
 #app .bg-bubbles li:nth-child(13) {
@@ -320,78 +320,78 @@ body {
           animation-duration: 19s;
   -webkit-animation-delay: -1s;
           animation-delay: -1s;
-  width: 61px;
-  height: 61px;
+  width: 101px;
+  height: 101px;
 }
 
 #app .bg-bubbles li:nth-child(14) {
   left: 70%;
-  -webkit-animation-duration: 11s;
-          animation-duration: 11s;
-  -webkit-animation-delay: -1s;
-          animation-delay: -1s;
-  width: 76px;
-  height: 76px;
+  -webkit-animation-duration: 18s;
+          animation-duration: 18s;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  width: 74px;
+  height: 74px;
 }
 
 #app .bg-bubbles li:nth-child(15) {
   left: 75%;
-  -webkit-animation-duration: 18s;
-          animation-duration: 18s;
-  -webkit-animation-delay: 5s;
-          animation-delay: 5s;
-  width: 63px;
-  height: 63px;
+  -webkit-animation-duration: 13s;
+          animation-duration: 13s;
+  -webkit-animation-delay: 6s;
+          animation-delay: 6s;
+  width: 43px;
+  height: 43px;
 }
 
 #app .bg-bubbles li:nth-child(16) {
   left: 80%;
   -webkit-animation-duration: 17s;
           animation-duration: 17s;
-  -webkit-animation-delay: -1s;
-          animation-delay: -1s;
-  width: 47px;
-  height: 47px;
+  -webkit-animation-delay: 10s;
+          animation-delay: 10s;
+  width: 115px;
+  height: 115px;
 }
 
 #app .bg-bubbles li:nth-child(17) {
   left: 85%;
-  -webkit-animation-duration: 14s;
-          animation-duration: 14s;
-  -webkit-animation-delay: -2s;
-          animation-delay: -2s;
-  width: 63px;
-  height: 63px;
+  -webkit-animation-duration: 20s;
+          animation-duration: 20s;
+  -webkit-animation-delay: -1s;
+          animation-delay: -1s;
+  width: 85px;
+  height: 85px;
 }
 
 #app .bg-bubbles li:nth-child(18) {
   left: 90%;
-  -webkit-animation-duration: 19s;
-          animation-duration: 19s;
-  -webkit-animation-delay: -2s;
-          animation-delay: -2s;
-  width: 71px;
-  height: 71px;
+  -webkit-animation-duration: 13s;
+          animation-duration: 13s;
+  -webkit-animation-delay: -4s;
+          animation-delay: -4s;
+  width: 55px;
+  height: 55px;
 }
 
 #app .bg-bubbles li:nth-child(19) {
   left: 95%;
-  -webkit-animation-duration: 12s;
-          animation-duration: 12s;
-  -webkit-animation-delay: 8s;
-          animation-delay: 8s;
-  width: 91px;
-  height: 91px;
+  -webkit-animation-duration: 17s;
+          animation-duration: 17s;
+  -webkit-animation-delay: -2s;
+          animation-delay: -2s;
+  width: 42px;
+  height: 42px;
 }
 
 #app .bg-bubbles li:nth-child(20) {
   left: 100%;
-  -webkit-animation-duration: 11s;
-          animation-duration: 11s;
-  -webkit-animation-delay: -3s;
-          animation-delay: -3s;
-  width: 72px;
-  height: 72px;
+  -webkit-animation-duration: 18s;
+          animation-duration: 18s;
+  -webkit-animation-delay: -2s;
+          animation-delay: -2s;
+  width: 74px;
+  height: 74px;
 }
 
 .title_style, body #app main .detail .detail_container .row .detail_title .title_btn, body #app main .skill .skill_container .row .skill_title .title_btn, body #app main .profile .profile_container .row .profile_title .title_btn {
@@ -709,6 +709,18 @@ body #app .aud .aud_inner .aud_img svg {
   fill: url(#myGradient);
 }
 
+body #app .github {
+  width: 50px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 99;
+}
+
+body #app .github svg {
+  fill: #106285;
+}
+
 body #app main {
   overflow: hidden;
 }
@@ -743,7 +755,7 @@ body #app main .detail .detail_container .row .detail_content .content_card .row
 body #app main .detail .detail_container .row .detail_content .content_card .row .img_area .hrad_img {
   width: 100%;
   height: 100%;
-  background-image: url("../img/headphoto.webp");
+  background-image: url("../img/headphoto.jpg");
   background-size: 250%;
   background-position: 80% 38%;
   background-repeat: no-repeat;
