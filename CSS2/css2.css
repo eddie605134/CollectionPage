@@ -6,7 +6,7 @@ div {
   width: 100vw;
   height: 100vh;
   margin: 0;
-  background: radial-gradient(#ffd4cc, black);
+  background: radial-gradient(white, black);
 }
 
 div:before, div:after {
@@ -18,19 +18,19 @@ div:before, div:after {
   height: 200vmax;
   opacity: .5;
   mix-blend-mode: overlay;
-  -webkit-animation: rotate 7.3s ease-in-out infinite;
-          animation: rotate 7.3s ease-in-out infinite;
+  -webkit-animation: rotate 5.8s ease-in-out infinite;
+          animation: rotate 5.8s ease-in-out infinite;
   content: '';
 }
 
 div:before {
-  background: conic-gradient(rgba(3, 10, 0, 0.29), rgba(3, 10, 0, 0.24), rgba(3, 10, 0, 0.77), rgba(3, 10, 0, 0.47), rgba(3, 10, 0, 0.35), rgba(3, 10, 0, 0.1), rgba(3, 10, 0, 0.05), rgba(3, 10, 0, 0.55), rgba(3, 10, 0, 0.29), rgba(3, 10, 0, 0.36), rgba(3, 10, 0, 0.11), rgba(3, 10, 0, 0.5), rgba(3, 10, 0, 0.36), rgba(3, 10, 0, 0.08), rgba(3, 10, 0, 0.31), rgba(3, 10, 0, 0.03), rgba(3, 10, 0, 0.72), rgba(3, 10, 0, 0.43), rgba(3, 10, 0, 0.42), rgba(3, 10, 0, 0.34), rgba(3, 10, 0, 0.29), rgba(3, 10, 0, 0.43), rgba(3, 10, 0, 0.07), rgba(3, 10, 0, 0.35), rgba(3, 10, 0, 0.75), rgba(3, 10, 0, 0.03), rgba(3, 10, 0, 0.97), rgba(3, 10, 0, 0.29), rgba(3, 10, 0, 0.24), rgba(3, 10, 0, 0.77), rgba(3, 10, 0, 0.47), rgba(3, 10, 0, 0.35), rgba(3, 10, 0, 0.1), rgba(3, 10, 0, 0.05), rgba(3, 10, 0, 0.55), rgba(3, 10, 0, 0.29), rgba(3, 10, 0, 0.36), rgba(3, 10, 0, 0.11), rgba(3, 10, 0, 0.5), rgba(3, 10, 0, 0.36), rgba(3, 10, 0, 0.08), rgba(3, 10, 0, 0.31), rgba(3, 10, 0, 0.03), rgba(3, 10, 0, 0.72), rgba(3, 10, 0, 0.43), rgba(3, 10, 0, 0.42), rgba(3, 10, 0, 0.34), rgba(3, 10, 0, 0.29), rgba(3, 10, 0, 0.43), rgba(3, 10, 0, 0.07), rgba(3, 10, 0, 0.35), rgba(3, 10, 0, 0.75), rgba(3, 10, 0, 0.03));
+  background: conic-gradient(rgba(3, 10, 0, 0.27), rgba(3, 10, 0, 0.53), rgba(3, 10, 0, 0.13), rgba(3, 10, 0, 0.84), rgba(3, 10, 0, 0.59), rgba(3, 10, 0, 0.52), rgba(3, 10, 0, 0.67), rgba(3, 10, 0, 0.97), rgba(3, 10, 0, 0.52), rgba(3, 10, 0, 0.74), rgba(3, 10, 0, 0.09), rgba(3, 10, 0, 0.99), rgba(3, 10, 0, 0.08), rgba(3, 10, 0, 0.68), rgba(3, 10, 0, 0.05), rgba(3, 10, 0, 0.49), rgba(3, 10, 0, 0.66), rgba(3, 10, 0, 0.17), rgba(3, 10, 0, 0.4), rgba(3, 10, 0, 0.63), rgba(3, 10, 0, 0.2), rgba(3, 10, 0, 0.9), rgba(3, 10, 0, 0.75), rgba(3, 10, 0, 0.5), rgba(3, 10, 0, 0.79), rgba(3, 10, 0, 0.27), rgba(3, 10, 0, 0.53), rgba(3, 10, 0, 0.13), rgba(3, 10, 0, 0.84), rgba(3, 10, 0, 0.59), rgba(3, 10, 0, 0.52), rgba(3, 10, 0, 0.67), rgba(3, 10, 0, 0.97), rgba(3, 10, 0, 0.52), rgba(3, 10, 0, 0.74), rgba(3, 10, 0, 0.09), rgba(3, 10, 0, 0.99), rgba(3, 10, 0, 0.08), rgba(3, 10, 0, 0.68), rgba(3, 10, 0, 0.05), rgba(3, 10, 0, 0.49), rgba(3, 10, 0, 0.66), rgba(3, 10, 0, 0.17), rgba(3, 10, 0, 0.4), rgba(3, 10, 0, 0.63), rgba(3, 10, 0, 0.2), rgba(3, 10, 0, 0.9), rgba(3, 10, 0, 0.75), rgba(3, 10, 0, 0.5));
 }
 
 div:after {
-  background: conic-gradient(rgba(3, 10, 0, 0.49), rgba(3, 10, 0, 0.59), rgba(3, 10, 0, 0.74), rgba(3, 10, 0, 0.28), rgba(3, 10, 0, 0.74), rgba(3, 10, 0, 0.69), rgba(3, 10, 0, 0.91), rgba(3, 10, 0, 0.56), rgba(3, 10, 0, 0.75), rgba(3, 10, 0, 0.09), rgba(3, 10, 0, 0.89), rgba(3, 10, 0, 0.43), rgba(3, 10, 0, 0.3), rgba(3, 10, 0, 0.64), rgba(3, 10, 0, 0.96), rgba(3, 10, 0, 0.13), rgba(3, 10, 0, 0.58), rgba(3, 10, 0, 0.08), rgba(3, 10, 0, 0.66), rgba(3, 10, 0, 0.9), rgba(3, 10, 0, 0.49), rgba(3, 10, 0, 0.59), rgba(3, 10, 0, 0.74), rgba(3, 10, 0, 0.28), rgba(3, 10, 0, 0.74), rgba(3, 10, 0, 0.69), rgba(3, 10, 0, 0.91), rgba(3, 10, 0, 0.56), rgba(3, 10, 0, 0.75), rgba(3, 10, 0, 0.09), rgba(3, 10, 0, 0.89), rgba(3, 10, 0, 0.43), rgba(3, 10, 0, 0.3), rgba(3, 10, 0, 0.64), rgba(3, 10, 0, 0.96), rgba(3, 10, 0, 0.13), rgba(3, 10, 0, 0.58), rgba(3, 10, 0, 0.08), rgba(3, 10, 0, 0.66));
-  -webkit-animation-duration: 5.4s;
-          animation-duration: 5.4s;
+  background: conic-gradient(rgba(3, 10, 0, 0.26), rgba(3, 10, 0, 0.26), rgba(3, 10, 0, 0.9), rgba(3, 10, 0, 0.41), rgba(3, 10, 0, 0.65), rgba(3, 10, 0, 0.04), rgba(3, 10, 0, 0.47), rgba(3, 10, 0, 0.72), rgba(3, 10, 0, 0.31), rgba(3, 10, 0, 0.95), rgba(3, 10, 0, 0.42), rgba(3, 10, 0, 0.27), rgba(3, 10, 0, 0.09), rgba(3, 10, 0, 0.06), rgba(3, 10, 0, 0.98), rgba(4, 10, 1, 0.96), rgba(3, 10, 0, 0.38), rgba(3, 10, 0, 0.14), rgba(3, 10, 0, 0.15), rgba(3, 10, 0, 0.33), rgba(3, 10, 0, 0.34), rgba(3, 10, 0, 0.1), rgba(3, 10, 0, 0.38), rgba(3, 10, 0, 0.49), rgba(3, 10, 0, 0.92), rgba(3, 10, 0, 0.26), rgba(3, 10, 0, 0.26), rgba(3, 10, 0, 0.9), rgba(3, 10, 0, 0.41), rgba(3, 10, 0, 0.65), rgba(3, 10, 0, 0.04), rgba(3, 10, 0, 0.47), rgba(3, 10, 0, 0.72), rgba(3, 10, 0, 0.31), rgba(3, 10, 0, 0.95), rgba(3, 10, 0, 0.42), rgba(3, 10, 0, 0.27), rgba(3, 10, 0, 0.09), rgba(3, 10, 0, 0.06), rgba(3, 10, 0, 0.98), rgba(4, 10, 1, 0.96), rgba(3, 10, 0, 0.38), rgba(3, 10, 0, 0.14), rgba(3, 10, 0, 0.15), rgba(3, 10, 0, 0.33), rgba(3, 10, 0, 0.34), rgba(3, 10, 0, 0.1), rgba(3, 10, 0, 0.38), rgba(3, 10, 0, 0.49));
+  -webkit-animation-duration: 6.6s;
+          animation-duration: 6.6s;
   animation-direction: reverse;
 }
 
